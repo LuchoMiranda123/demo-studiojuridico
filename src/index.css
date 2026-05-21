@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── FullCalendar overrides ────────────────────────────────────── */
+.fc .fc-toolbar-title {
+  font-size: 1rem !important;
+  font-weight: 600;
+  color: #1a2e4a;
+}
+.fc .fc-button-primary {
+  background-color: #1a2e4a !important;
+  border-color: #1a2e4a !important;
+  font-size: 0.78rem !important;
+  padding: 0.3rem 0.75rem !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.fc .fc-button-primary:hover {
+  background-color: #243d60 !important;
+  border-color: #243d60 !important;
+}
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #c9a84c !important;
+  border-color: #c9a84c !important;
+  color: #1a2e4a !important;
+  font-weight: 600 !important;
+}
+.fc .fc-button-group {
+  gap: 3px;
+}
+.fc-daygrid-event {
+  cursor: pointer;
+  border-radius: 4px !important;
+  font-size: 0.72rem !important;
+  padding: 1px 5px !important;
+}
+.fc .fc-day-today {
+  background-color: rgba(201, 168, 76, 0.07) !important;
+}
+.fc .fc-col-header-cell-cushion {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+.fc .fc-daygrid-day-number {
+  font-size: 0.8rem;
+  color: #475569;
+  text-decoration: none;
+}
+.fc .fc-day-today .fc-daygrid-day-number {
+  background-color: #1a2e4a;
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.fc-list-event-title a {
+  text-decoration: none;
+  color: inherit;
+}
+.fc .fc-list-sticky .fc-list-day-cushion {
+  background-color: #f8fafc;
+}
+.fc .fc-scrollgrid {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* ─── Chat bubbles ──────────────────────────────────────────────── */
+.bubble-agent {
+  background-color: #1a2e4a;
+  color: #fff;
+  border-radius: 16px 16px 16px 4px;
+}
+.bubble-client {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  border-radius: 16px 16px 4px 16px;
+}
